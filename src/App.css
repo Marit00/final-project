@@ -58,7 +58,7 @@ p {
   line-height: 1.5;
 }
 
-button {
+button, .button {
   background-color: #F4CE14;
   color: black;
   padding: 20px;
@@ -69,15 +69,38 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+button:hover, .button:hover {
   background-color: black;
   color: #f4ce14;
   cursor: pointer;
 }
 
-main {
-  grid-area: main;
-  padding: 20px;
+.form {
+  grid-area: header;
+  background-color: #495e57;
+  padding-top: 120px;
+}
+
+.formSection {
+  margin-left: 10%;
+  padding-bottom: 50px;
+  width: 80%;
+  color: #EDEFEE;
+  grid-template-columns: 1fr 1fr;
+  display:grid;
+  justify-items: center;
+}
+
+.formImg {
+overflow: hidden;
+padding-top: 30px;
+}
+
+.formImg img {
+  height: 400px;
+  border-radius: 16pt;
+  display: block;
+  width: 100%;
 }
 
 footer {
